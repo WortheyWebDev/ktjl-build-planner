@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harley Quinn - Talents</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <img src="images/harley-quinn-name.png" alt="" id="harley-name">
+    <img src="images/ktjl-logo.png" alt="" id="ktjl">
+
+    <div id="menu">
+        <h2>SQUAD</h2>
+        <h2>LOOKS</h2>
+        <h2>LOOKOUT</h2>
+        <h2 id="menu-talents">TALENTS</h2>
+        <h2>SOCIAL</h2>
+        <h2>CODEX</h2>
+        <h2>OPTIONS</h2>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <h2 class="talent-title TNK">THRILLS N' KILLS</h2>
+            <div class="content">
+                <div class="row">
+                    <div class="number">
+                        <p>1</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list hidden">
+                        </div>
+
+
+
+                        <div class="talent-list talent-tnk" id="box1"
+                            onclick="selectedTNK(this, 'images/CarnevilC.png', 'images/CarnevilG.png')">
+                            <p>5X</p>
+                        </div>
+
+
+
+                        <div class="talent-list hidden">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number">
+                        <p>2</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list talent-tnk" id="box6"
+                            onclick="selectedTNK(this, 'images/TraumaticExperienceC.png', 'images/TraumaticExperienceG.png')">
+                        </div>
+                        <div class="talent-list talent-tnk" id="box7"
+                            onclick="selectedTNK(this, 'images/BiggerBangC.png', 'images/BiggerBangG.png')">
+                        </div>
+                        <div class="talent-list talent-tnk" id="box8"
+                            onclick="selectedTNK(this, 'images/LeaveAMarkC.png', 'images/LeaveAMarkG.png')">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number">
+                        <p>3</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list talent-tnk" id="box13"
+                            onclick="selectedTNK(this, 'images/HandyHandCannonC.png', 'images/HandyHandCannonG.png')">
+                            <p>10X</p>
+                        </div>
+                        <div class="talent-list talent-tnk" id="box14"
+                            onclick="selectedTNK(this, 'images/SmallButDeadlyC.png', 'images/SmallButDeadlyG.png')">
+                        </div>
+                        <div class="talent-list talent-tnk" id="box15"
+                            onclick="selectedTNK(this, 'images/BringOutBigGunsC.png', 'images/BringOutBigGunsG.png')">
+                            <p>10X</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number">
+                        <p>4</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list talent-tnk" id="box18"
+                            onclick="selectedTNK(this, 'images/GroupTherapyC.png', 'images/GroupTherapyG.png')">
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-tnk" id="box19"
+                            onclick="selectedTNK(this, 'images/Self-CareC.png', 'images/Self-CareG.png')">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number">
+                        <p>5</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list talent-tnk" id="box24"
+                            onclick="selectedTNK(this, 'images/CherryBombC.png', 'images/CherryBombG.png')">
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-tnk" id="box25"
+                            onclick="selectedTNK(this, 'images/RecklessC.png', 'images/RecklessG.png')">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number">
+                        <p>6</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-tnk" id="box31"
+                            onclick="selectedTNK(this, 'images/BottleRocketC.png', 'images/BottleRocketG.png')">
+                            <p>20X</p>
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number">
+                        <p>7</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list talent-tnk" id="box34"
+                            onclick="selectedTNK(this, 'images/GrenadeParadeC.png', 'images/GrenadeParadeG.png')">
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-tnk" id="box35"
+                            onclick="selectedTNK(this, 'images/HomeCookinC.png', 'images/HomeCookinG.png')">
+                            <p>20X</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number">
+                        <p>8</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-tnk" id="box41"
+                            onclick="selectedTNK(this, 'images/EncoreC.png', 'images/EncoreG.png')">
+                            <p>30X</p>
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number">
+                        <p>9</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list talent-tnk" id="box44"
+                            onclick="selectedTNK(this, 'images/ClownSmackdownC.png', 'images/ClownSmackdownG.png')">
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-tnk" id="box45"
+                            onclick="selectedTNK(this, 'images/BoomBangPowC.png', 'images/BoomBangPowG.png')">
+                            <p>30X</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number">
+                        <p>10</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list talent-tnk" id="box49"
+                            onclick="selectedTNK(this, 'images/TheBallerinaC.png', 'images/TheBallerinaG.png')">
+                            <p>40X</p>
+                        </div>
+                        <div class="talent-list talent-tnk" id="box50"
+                            onclick="selectedTNK(this, 'images/TheShowMustGoOnC.png', 'images/TheShowMustGoOnG.png')">
+                            <p>10X</p>
+                        </div>
+                        <div class="talent-list talent-tnk" id="box51"
+                            onclick="selectedTNK(this, 'images/IntensiveTreatmentC.png', 'images/IntensiveTreatmentG.png')">
+                            <p>40X</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="box">
+            <h2 class="talent-title MMM">MEET MY MALLET</h2>
+            <div class="content" id="MMM">
+                <div class="row">
+                    <div class="number-mmm">
+                        <p>1</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list talent-mmm" id="box2"
+                            onclick="selectedMMM(this, 'images/HomeRunHitterC.png', 'images/HomeRunHitterG.png')">
+                        </div>
+                        <div class="talent-list talent-mmm" id="box3"
+                            onclick="selectedMMM(this, 'images/UntouchableC.png', 'images/UntouchableG.png')">
+                            <p>5X</p>
+                        </div>
+                        <div class="talent-list talent-mmm" id="box4"
+                            onclick="selectedMMM(this, 'images/BatteringPracticeC.png', 'images/BatteringPracticeG.png')">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number-mmm">
+                        <p>2</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-mmm" id="box9"
+                            onclick="selectedMMM(this, 'images/HarleySSC.png', 'images/HarleySSG.png')">
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number-mmm">
+                        <p>3</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-mmm" id="box16"
+                            onclick="selectedMMM(this, 'images/ArkhamSpecialC.png', 'images/ArkhamSpecialG.png')">
+                            <p>10X</p>
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number-mmm">
+                        <p>4</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list talent-mmm" id="box20"
+                            onclick="selectedMMM(this, 'images/DroneintheZoneC.png', 'images/DroneintheZoneG.png')">
+                            <p>10X</p>
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-mmm" id="box21"
+                            onclick="selectedMMM(this, 'images/PerformanceArtC.png', 'images/PerformanceArtG.png')">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number-mmm">
+                        <p>5</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list talent-mmm" id="box26"
+                            onclick="selectedMMM(this, 'images/SafetyFirstC.png', 'images/SafetyFirstG.png')">
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-mmm" id="box27"
+                            onclick="selectedMMM(this, 'images/AudienceParticipationC.png', 'images/AudienceParticipationG.png')">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number-mmm">
+                        <p>6</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-mmm" id="box32"
+                            onclick="selectedMMM(this, 'images/ThreeStrikesC.png', 'images/ThreeStrikesG.png')">
+                            <p>20X</p>
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number-mmm">
+                        <p>7</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list talent-mmm" id="box36"
+                            onclick="selectedMMM(this, 'images/KeepEmCominC.png', 'images/KeepEmCominG.png')">
+                            <p>20X</p>
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-mmm" id="box37"
+                            onclick="selectedMMM(this, 'images/PowderKegC.png', 'images/PowderKegG.png')">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number-mmm">
+                        <p>8</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-mmm" id="box42"
+                            onclick="selectedMMM(this, 'images/BigSwingerC.png', 'images/BigSwingerG.png')">
+                            <p>30X</p>
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number-mmm">
+                        <p>9</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list talent-mmm" id="box46"
+                            onclick="selectedMMM(this, 'images/TightropeActC.png', 'images/TightropeActG.png')">
+                            <p>30X</p>
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-mmm" id="box47"
+                            onclick="selectedMMM(this, 'images/TheOldOneTwoC.png', 'images/TheOldOneTwoG.png')">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number-mmm">
+                        <p>10</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list talent-mmm" id="box52"
+                            onclick="selectedMMM(this, 'images/KissKissStabStabC.png', 'images/KissKissStabStabG.png')">
+                            <p>50X</p>
+                        </div>
+                        <div class="talent-list talent-mmm" id="box53"
+                            onclick="selectedMMM(this, 'images/WorkinOvertimeC.png', 'images/WorkinOvertimeG.png')">
+                            <p>50X</p>
+                        </div>
+                        <div class="talent-list talent-mmm" id="box54"
+                            onclick="selectedMMM(this, 'images/KissKissBangBangC.png', 'images/KissKissBangBangG.png')">
+                            <p>50X</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2 class="talent-title OWS">ONE WOMAN SHOW</h2>
+            <div class="content" id="OWS">
+                <div class="row">
+                    <div class="number-ows">
+                        <p>1</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-ows" id="box5"
+                            onclick="selectedOWS(this, 'images/TwinkletoesC.png', 'images/TwinkletoesG.png')">
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number-ows">
+                        <p>2</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list talent-ows" id="box10"
+                            onclick="selectedOWS(this, 'images/HeadspinnerC.png', 'images/HeadspinnerG.png')">
+                        </div>
+                        <div class="talent-list talent-ows" id="box11"
+                            onclick="selectedOWS(this, 'images/OnTheHopC.png', 'images/OnTheHopG.png')">
+                        </div>
+                        <div class="talent-list talent-ows" id="box12"
+                            onclick="selectedOWS(this, 'images/TrapezeArtistC.png', 'images/TrapezeArtistG.png')">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number-ows">
+                        <p>3</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-ows" id="box17"
+                            onclick="selectedOWS(this, 'images/WhatGoesUpC.png', 'images/WhatGoesUpG.png')">
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number-ows">
+                        <p>4</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list talent-ows" id="box22"
+                            onclick="selectedOWS(this, 'images/ElusivenessC.png', 'images/ElusivenessG.png')">
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-ows" id="box23"
+                            onclick="selectedOWS(this, 'images/BirdofPreyC.png', 'images/BirdofPreyG.png')">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number-ows">
+                        <p>5</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list talent-ows" id="box28"
+                            onclick="selectedOWS(this, 'images/QuickRoutineC.png', 'images/QuickRoutineG.png')">
+                        </div>
+                        <div class="talent-list talent-ows" id="box29"
+                            onclick="selectedOWS(this, 'images/SlidinShrapnelC.png', 'images/SlidinShrapnelG.png')">
+                        </div>
+                        <div class="talent-list talent-ows" id="box30"
+                            onclick="selectedOWS(this, 'images/ComboCoasterC.png', 'images/ComboCoasterG.png')">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number-ows">
+                        <p>6</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-ows" id="box33"
+                            onclick="selectedOWS(this, 'images/JugglersDelightC.png', 'images/JugglersDelightG.png')">
+                            <p>20X</p>
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number-ows">
+                        <p>7</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list talent-ows" id="box38"
+                            onclick="selectedOWS(this, 'images/ElasticityC.png', 'images/ElasticityG.png')">
+                        </div>
+                        <div class="talent-list talent-ows" id="box39"
+                            onclick="selectedOWS(this, 'images/GrandstanderC.png', 'images/GrandstanderG.png')">
+                            <p>20X</p>
+                        </div>
+                        <div class="talent-list talent-ows" id="box40"
+                            onclick="selectedOWS(this, 'images/AGrappleADayC.png', 'images/AGrappleADayG.png')">
+                            <p>20X</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number-ows">
+                        <p>8</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-ows" id="box43"
+                            onclick="selectedOWS(this, 'images/AgentofChaosC.png', 'images/AgentofChaosG.png')">
+                            <p>30X</p>
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number-ows">
+                        <p>9</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-ows" id="box48"
+                            onclick="selectedOWS(this, 'images/SquadUltimateC.png', 'images/SquadUltimateG.png')">
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="number-ows">
+                        <p>10</p>
+                    </div>
+                    <div class="talents">
+                        <div class="talent-list talent-ows" id="box55"
+                            onclick="selectedOWS(this, 'images/UltimateThrillrideC.png', 'images/UltimateThrillrideG.png')">
+                        </div>
+                        <div class="talent-list hidden">
+                        </div>
+                        <div class="talent-list talent-ows" id="box56"
+                            onclick="selectedOWS(this, 'images/UltimateRefresherC.png', 'images/UltimateRefresherG.png')">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="descrip-box">
+            <div class="tier-title">
+                <h3 class="section" id="section1">TIER</h3>
+                <h2 class="section" id="section2">TALENT</h2>
+            </div>
+            <div id="skill-type">
+                <h4 class="section" id="section3"></h4>
+            </div>
+            <div id="descrip-content">
+                <p class="section" id="section4">Description</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

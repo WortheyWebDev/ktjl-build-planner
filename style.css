@@ -1,0 +1,544 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(to bottom right, rgb(24, 0, 24), rgb(4, 0, 32));
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url(images/harley-quinn.png);
+    background-size: contain;
+
+    background-repeat: no-repeat;
+    background-position: -163% 100%;
+    background-size: 80%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70%;
+    width: 13%;
+    margin: 10px;
+    box-shadow: 0 0 150px rgba(0, 0, 0, 1);
+}
+
+.descrip-box {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    margin: 10px;
+    box-shadow: 0 0 150px rgba(0, 0, 0, 1);
+    width: 20%;
+    z-index: 2;
+}
+
+.tier-title {
+    background-image: linear-gradient(to right, rgb(57, 0, 57), rgb(0, 0, 0, 0.449));
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+#skill-type {
+    color: gold;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+.tier-title h2 {
+    color: white;
+}
+
+.tier-title h3 {
+    color: gold;
+    font-weight: lighter
+}
+
+.descrip-box h4 {
+    background-image: linear-gradient(to right, rgb(110, 81, 6), rgba(0, 0, 0, 0.449));
+    padding: 5px;
+    font-weight: lighter;
+    color: white;
+}
+
+#descrip-content {
+    flex: 1;
+    color: white;
+    font-family: sans-serif;
+    padding: 10px;
+
+    background-image: linear-gradient(to bottom, rgba(0, 0, 48, 0.435), rgba(0, 0, 0, 0.116));
+}
+
+.talent-title {
+    background-color: #FF10F0;
+    width: 100%;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    font-weight: lighter;
+}
+
+.MMM {
+    background-color: #04D9FF;
+}
+
+.OWS {
+    background-color: #BC13FE;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #FF80CD;
+    box-shadow: 0 0 10px #FF10F0, 0 0 5px #FF10F0;
+}
+
+#MMM {
+    border: 1px solid #0CFFF4;
+    box-shadow: 0 0 10px #04D9FF, 0 0 5px #04D9FF;
+}
+
+#OWS {
+    border: 1px solid #CE67F7;
+    box-shadow: 0 0 10px #BC13FE, 0 0 5px #BC13FE;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    border: .5px solid #ff10ef3a;
+    background-color: #000;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: .5px;
+    width: 10%;
+    color: #FFF;
+    background-color: rgba(255, 16, 240, 0.15);
+    font-weight: bold;
+    border-right: 1px solid #FF80CD;
+    box-shadow: 2px 0 5px #FF10F0;
+    z-index: 1;
+}
+
+.number-mmm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: .5px;
+    width: 10%;
+    color: #FFF;
+    background-color: rgba(16, 84, 255, 0.15);
+    font-weight: bold;
+    border-right: 1px solid #0CFFF4;
+    box-shadow: 2px 0 5px #04D9FF;
+    z-index: 1;
+}
+
+.number-ows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: .5px;
+    width: 10%;
+    color: #FFF;
+    background-color: rgba(16, 84, 255, 0.15);
+    font-weight: bold;
+    border-right: 1px solid #CE67F7;
+    box-shadow: 2px 0 5px #BC13FE;
+    z-index: 1;
+}
+
+.talents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    background-color: black;
+}
+
+.talent-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50px;
+    width: 50px;
+    background-color: #000;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 70%;
+    background-position: center;
+}
+
+.talent-tnk {
+    border: 1px solid #ff10ef5b;
+}
+
+.talent-mmm {
+    border: 1px solid #04d9ff56
+}
+
+.talent-ows {
+    border: 1px solid #bb13fe64
+}
+
+.talent-list:hover {
+    outline: 2px solid white;
+}
+
+.talent-list p {
+    color: #FFF;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+#harley-name {
+    position: absolute;
+    width: 30%;
+    left: 68%;
+    top: 65%;
+    z-index: 3;
+}
+
+#ktjl {
+    position: absolute;
+    width: 20%;
+    left: 78%;
+    top: 5%;
+}
+
+#menu {
+    display: flex;
+    color: white;
+    position: absolute;
+    height: 10%;
+    width: 45%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 25%;
+    margin-top: 1%;
+    margin-bottom: 10px;
+}
+
+#menu h2 {
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: lighter;
+}
+
+#menu-talents {
+    border-bottom: 5px solid goldenrod;
+    background-image: linear-gradient(black, rgba(255, 255, 0, 0.401));
+}
+
+li {
+    padding-right: 20px;
+}
+
+/* JavaScript span formatting for talent desciption box. */
+.talent-name {
+    color: #ff1088;
+}
+
+.combo {
+    color: yellow;
+}
+
+.mechanic {
+    color: goldenrod;
+}
+
+.rng {
+    color: #FF10F0;
+}
+
+.ability {
+    color: gold;
+}
+
+.mmm {
+    color: #04D9FF;
+}
+
+.shield {
+    color: #0CFFF4;
+}
+
+.ows {
+    color: #BC13FE;
+}
+
+.hp {
+    color: red;
+}
+
+/* Talent Icon Formatting */
+
+#box1 {
+    background-image: url('images/CarnevilG.png');
+}
+
+#box2 {
+    background-image: url('images/HomeRunHitterG.png');
+}
+
+#box3 {
+    background-image: url('images/UntouchableG.png');
+}
+
+#box4 {
+    background-image: url('images/BatteringPracticeG.png');
+}
+
+#box5 {
+    background-image: url('images/TwinkletoesG.png');
+}
+
+#box6 {
+    background-image: url('images/TraumaticExperienceG.png');
+}
+
+#box7 {
+    background-image: url('images/BiggerBangG.png');
+}
+
+#box8 {
+    background-image: url('images/LeaveAMarkG.png');
+}
+
+#box9 {
+    background-image: url('images/HarleySSG.png');
+}
+
+#box10 {
+    background-image: url('images/HeadspinnerG.png');
+}
+
+#box11 {
+    background-image: url('images/OnTheHopG.png');
+}
+
+#box12 {
+    background-image: url('images/TrapezeArtistG.png');
+}
+
+#box13 {
+    background-image: url('images/HandyHandCannonG.png');
+}
+
+#box14 {
+    background-image: url('images/SmallButDeadlyG.png');
+}
+
+#box15 {
+    background-image: url('images/BringOutBigGunsG.png');
+}
+
+#box16 {
+    background-image: url('images/ArkhamSpecialG.png');
+}
+
+#box17 {
+    background-image: url('images/WhatGoesUpG.png');
+}
+
+#box18 {
+    background-image: url('images/GroupTherapyG.png');
+}
+
+#box19 {
+    background-image: url('images/Self-CareG.png');
+}
+
+#box20 {
+    background-image: url('images/DroneintheZoneG.png');
+}
+
+#box21 {
+    background-image: url('images/PerformanceArtG.png');
+}
+
+#box22 {
+    background-image: url('images/ElusivenessG.png');
+}
+
+#box23 {
+    background-image: url('images/BirdofPreyG.png');
+}
+
+#box24 {
+    background-image: url('images/CherryBombG.png');
+}
+
+#box25 {
+    background-image: url('images/RecklessG.png');
+}
+
+#box26 {
+    background-image: url('images/SafetyFirstG.png');
+}
+
+#box27 {
+    background-image: url('images/AudienceParticipationG.png');
+}
+
+#box28 {
+    background-image: url('images/QuickRoutineG.png');
+}
+
+#box29 {
+    background-image: url('images/SlidinShrapnelG.png');
+}
+
+#box30 {
+    background-image: url('images/ComboCoasterG.png');
+}
+
+#box31 {
+    background-image: url('images/BottleRocketG.png');
+}
+
+#box31 {
+    background-image: url('images/BottleRocketG.png');
+}
+
+#box32 {
+    background-image: url('images/ThreeStrikesG.png');
+}
+
+#box33 {
+    background-image: url('images/JugglersDelightG.png');
+}
+
+#box34 {
+    background-image: url('images/GrenadeParadeG.png');
+}
+
+#box35 {
+    background-image: url('images/HomeCookinG.png');
+}
+
+#box36 {
+    background-image: url('images/KeepEmCominG.png');
+}
+
+#box37 {
+    background-image: url('images/PowderKegG.png');
+}
+
+#box38 {
+    background-image: url('images/ElasticityG.png');
+}
+
+#box39 {
+    background-image: url('images/GrandstanderG.png');
+}
+
+#box40 {
+    background-image: url('images/AGrappleADayG.png');
+}
+
+#box41 {
+    background-image: url('images/EncoreG.png');
+}
+
+#box42 {
+    background-image: url('images/BigSwingerG.png');
+}
+
+#box43 {
+    background-image: url('images/AgentofChaosG.png');
+}
+
+#box44 {
+    background-image: url('images/ClownSmackdownG.png');
+}
+
+#box45 {
+    background-image: url('images/BoomBangPowG.png');
+}
+
+#box46 {
+    background-image: url('images/TightropeActG.png');
+}
+
+#box47 {
+    background-image: url('images/TheOldOneTwoG.png');
+}
+
+#box48 {
+    background-image: url('images/SquadUltimateG.png');
+}
+
+#box49 {
+    background-image: url('images/TheBallerinaG.png');
+}
+
+#box50 {
+    background-image: url('images/TheShowMustGoOnG.png');
+}
+
+#box51 {
+    background-image: url('images/IntensiveTreatmentG.png');
+}
+
+#box52 {
+    background-image: url('images/KissKissStabStabG.png');
+}
+
+#box53 {
+    background-image: url('images/WorkinOvertimeG.png');
+}
+
+#box54 {
+    background-image: url('images/KissKissBangBangG.png');
+}
+
+#box55 {
+    background-image: url('images/UltimateThrillrideG.png');
+}
+
+#box56 {
+    background-image: url('images/UltimateRefresherG.png');
+}
+
+
+.tnk-clicked {
+    border: 1px solid #FF80CD;
+    box-shadow: 0 0 10px #FF10F0, 0 0 5px #FF10F0;
+}
+
+.mmm-clicked {
+    border: 1px solid #0CFFF4;
+    box-shadow: 0 0 10px #04D9FF, 0 0 5px #04D9FF;
+}
+
+.ows-clicked {
+    border: 1px solid #CE67F7;
+    box-shadow: 0 0 10px #BC13FE, 0 0 5px #BC13FE;
+}
